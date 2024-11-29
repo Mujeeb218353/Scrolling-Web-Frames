@@ -1,0 +1,22 @@
+{
+  "name": "scrolling-website-image-frames",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build:css": "tailwindcss -i ./src/index.css -o ./src/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15",
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.2.0",
+    "gsap": "^3.12.5"
+  }
+}
